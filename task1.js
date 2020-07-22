@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const fs  = require("fs")
-const favicon = require('serve-favicon')
+//const favicon = require('serve-favicon')
 //app.use(favicon(__dirname + '/' + 'node_modules' + '/' + 'serve-favicon' + '/' + 'favicon.ico'));
 //console.log(__dirname + '/' + 'node_modules' + '/' + 'serve-favicon' + '/' + 'favicon.ico');
 process.env.PWD = process.cwd()
