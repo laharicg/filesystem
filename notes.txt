@@ -1,0 +1,69 @@
+client side rend & server side
+client side is adv since any client can 
+node js
+ryan dahl 2009
+
+
+-running code in server without browser and console --- node .\index.js
+-alert is object inside browser thus doesnt work
+-window is nothing & underfined while running JS  in serverside 
+  since in NodeJs there is no window object.
+-nodejs can help control OS.
+-analog for window in Nodejs is 'Process' - console.log(process)
+-Packages-> 3 types
+  Inbuilt
+  Custom 
+  Thirdparty packages
+
+-Inbuilt package 
+  const os = require("os");
+where os is a package stored in os varialble 
+ console.log(os.release())
+ where release is fn that lets us know the current platform we r working in.
+
+ JS running in server, OS level.
+-----------
+  const fs = require("fs")
+ where fs is filesystem
+ 
+fs.writeFile("message.txt","Hello world!",function(err) {
+ if(err) throw err;
+console.log("File created..success");
+});
+
+fs.readFile("message.txt",'utf8',function(err) {
+ if(err) throw err;
+console.log(data);
+});
+
+here utf8 lets to display(read) the content in message.txt file. content here is "Hello World!".
+------------
+
+fs.readdir("my folder",function(err,files){
+ if(err) throw err;
+console.log(files)
+})
+ 
+ here readdir reads all the content in directory and lists the files in myFolder and displayed.
+ thus upon node.\index.js we get - > ['message.txt']
+ ref 1.png
+
+readdir simple example is google drive.
+-----------------------
+fs.mkdir -> makedirectory
+ref documentation in node.js
+------------------------
+const path ???
+
+------------------
+npm install express
+
+index.js ---> constant express =require("express");
+const app =express();
+
+
+transfer the packages thro ports
+
+
+
+
